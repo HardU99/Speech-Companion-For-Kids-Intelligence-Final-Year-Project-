@@ -1,0 +1,236 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "speech companion for kids intelligence",
+            "modelConfiguration": {
+                "fallbackIntentSensitivity": {
+                    "level": "LOW"
+                }
+            },
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "StoryTypeIntent",
+                    "slots": [],
+                    "samples": [
+                        "start a story",
+                        "I will like to listen happy stories"
+                    ]
+                },
+                {
+                    "name": "StoryIntent",
+                    "slots": [
+                        {
+                            "name": "request_storyType",
+                            "type": "AMAZON.Book"
+                        }
+                    ],
+                    "samples": [
+                        "i will like to listen {request_storyType}"
+                    ]
+                },
+                {
+                    "name": "QuizIntent",
+                    "slots": [
+                        {
+                            "name": "request_storyTitle",
+                            "type": "AMAZON.Book"
+                        }
+                    ],
+                    "samples": [
+                        "repeat the story",
+                        "start quiz for {request_storyTitle}"
+                    ]
+                },
+                {
+                    "name": "PoemIntent",
+                    "slots": [],
+                    "samples": [
+                        "Start poem"
+                    ]
+                },
+                {
+                    "name": "ListenPoemIntent",
+                    "slots": [
+                        {
+                            "name": "request_poemTitle",
+                            "type": "AMAZON.Book"
+                        }
+                    ],
+                    "samples": [
+                        "repeat the poem",
+                        "Play {request_poemTitle} poem"
+                    ]
+                },
+                {
+                    "name": "ListenStoryIntent",
+                    "slots": [
+                        {
+                            "name": "request_story",
+                            "type": "AMAZON.Book"
+                        }
+                    ],
+                    "samples": [
+                        "play {request_story} story"
+                    ]
+                },
+                {
+                    "name": "QuizAnswerIntent",
+                    "slots": [
+                        {
+                            "name": "request_quizAnswer",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "the answer is {request_quizAnswer}"
+                    ]
+                },
+                {
+                    "name": "QuizQuestionIntent",
+                    "slots": [],
+                    "samples": [
+                        "next question",
+                        "start quiz",
+                        "first question"
+                    ]
+                },
+                {
+                    "name": "AlphabetIntent",
+                    "slots": [],
+                    "samples": [
+                        "start alphabet"
+                    ]
+                },
+                {
+                    "name": "AMAZON.MoreIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateSettingsIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollRightIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollLeftIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "IndexIntent",
+                    "slots": [],
+                    "samples": [
+                        "Show me the index"
+                    ]
+                },
+                {
+                    "name": "RepeatQuizQuestionIntent",
+                    "slots": [],
+                    "samples": [
+                        "repeat the question"
+                    ]
+                },
+                {
+                    "name": "MathQuizIntent",
+                    "slots": [],
+                    "samples": [
+                        "start math quiz"
+                    ]
+                },
+                {
+                    "name": "RockPaperScissorIntent",
+                    "slots": [],
+                    "samples": [
+                        "start the game"
+                    ]
+                },
+                {
+                    "name": "RockPaperScissorDecisionIntent",
+                    "slots": [
+                        {
+                            "name": "request_choice",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "my choice is {request_choice}"
+                    ]
+                },
+                {
+                    "name": "FactTypeIntent",
+                    "slots": [],
+                    "samples": [
+                        "show me some facts"
+                    ]
+                },
+                {
+                    "name": "FactIntent",
+                    "slots": [
+                        {
+                            "name": "request_factType",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "other facts",
+                        "facts about {request_factType}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ResumeIntent",
+                    "samples": []
+                }
+            ],
+            "types": []
+        }
+    }
+}
